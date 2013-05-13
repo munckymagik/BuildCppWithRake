@@ -21,6 +21,8 @@ file MYLIB do |t|
   # TODO obviously this suffers from all the problems of recursive make :(
   # See http://stackoverflow.com/questions/4489482/in-rake-how-do-i-call-a-subdir-rakefile
   Dir.chdir('../library') do
+    # TODO temporarily using hard coded path because rbenv is failing to find rake
+    # for some reason :(
     ruby "/usr/local/bin/rake"
   end
 end
