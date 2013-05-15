@@ -6,7 +6,7 @@
 int main(int argc, char **argv)
 {
 	std::cout << "Creating hello sayer" << std::endl;
-	MyLib::HelloSayer hello_sayer = MyLib::HelloSayer();
+	mylib::HelloSayer hello_sayer = mylib::HelloSayer();
 
 	std::cout << "About to say hello ..." << std::endl;
 

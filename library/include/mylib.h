@@ -3,7 +3,7 @@
 
 #include <string>
 
-namespace MyLib {
+namespace mylib {
 
 class HelloSayer
 {
