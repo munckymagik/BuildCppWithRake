@@ -23,7 +23,7 @@ file MYLIB do |t|
   Dir.chdir('../library') do
     # TODO temporarily using hard coded path because rbenv is failing to find rake
     # for some reason :(
-    ruby "/usr/local/bin/rake"
+    ruby "-S", "rake"
   end
 end
 
