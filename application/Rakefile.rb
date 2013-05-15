@@ -50,7 +50,7 @@ SRC.each do |fn|
 end
 
 desc "Compile sources and output as an executable binary"
-file 'bin/greeter' => [MYLIB, OBJ, BINDIR] do |t|
+file 'bin/greeter' => [BINDIR, MYLIB] + OBJ do |t|
   sh "g++ -o #{t.name} #{OBJ} #{MYLIB}"
 end
 

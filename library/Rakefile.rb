@@ -37,7 +37,7 @@ SRC.each do |fn|
 end
 
 desc "Compile sources and output as a static library"
-file 'bin/libmylib.a' => [OBJ, BINDIR] do |t|
+file 'bin/libmylib.a' => [BINDIR] + OBJ do |t|
   sh "ar rcs #{t.name} #{OBJ}"
 end
 
